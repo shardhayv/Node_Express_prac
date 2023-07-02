@@ -1,8 +1,10 @@
-const amount = 12;
-if (amount < 10) {
-  console.log("small number ");
-} else {
-  console.log("large number ");
-}
+const names = require("./first_module/names");
+const sayHello = require("./utils");
+console.log(names);
 
-console.log(`Yey it's my first node app!!!! `);
+// setInterval(() => {
+//   console.log("Hello You");
+// }, 1000);
+
+sayHello(names.shardhay);
+sayHello(names.vatshyayan);
